@@ -1,0 +1,19 @@
+{
+  "name": "autotune-backend",
+  "version": "1.0.0",
+  "description": "autotune-algo-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whitmey/autotune-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Whitmey/autotune-backend/issues"
+  },
+  "homepage": "https://github.com/Whitmey/autotune-backend#readme"
+}
