@@ -21,6 +21,8 @@
     "nodemon": "^1.18.9"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "oref0": "^0.6.2",
+    "shelljs": "^0.8.3"
   }
 }
