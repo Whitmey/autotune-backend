@@ -7,11 +7,11 @@ const emailService = require('./email-service');
 
 exports.run_algorithm = function(req, res) {
 
-  // fileWriter.generate_current_settings(req.body.currentProfile);
+  fileWriter.generateCurrentSettingsFiles(req.body.currentSettings);
 
-  shell.exec(`oref0-autotune --dir=${__basedir}/myopenaps --ns-host=${req.body.url} --start-date=2018-12-31 --end-date=2019-01-01 `);
+  shell.exec(`oref0-autotune --dir=${__basedir}/myopenaps --ns-host=${req.body.url} --start-date=2018-12-31 --end-date=2019-01-01 `)
 
-  fs.readFile('/Users/willwhitmey/myopenaps/autotune/autotune_recommendations.log', 'utf8', function(err, data) {
+  fs.readFile(`${__basedir}/myopenaps/autotune/autotune_recommendations.log`, 'utf8', function(err, data) {
     emailService.sendMail(req, data);
     res.send(parser.parse(data))
   });
