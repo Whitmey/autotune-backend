@@ -21,5 +21,3 @@ app.listen(port);
 
 
 console.log('AutoTune Algorithm API server started on: ' + port);
-// oref0-autotune --dir=~/myopenaps --ns-host=https:william-cgm.herokuapp.com --start-date=YYYY-MM-DD
-// /Users/willwhitmey/autotune-backend/node_modules/oref0/bin/oref0-autotune.sh

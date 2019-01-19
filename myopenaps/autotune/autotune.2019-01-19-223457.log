@@ -1,0 +1,432 @@
+Compressing old json and log files to save space...
+gzip: can't stat: ns-*.json (ns-*.json): No such file or directory
+gzip: can't stat: autotune*.json (autotune*.json): No such file or directory
+Autotune disk usage:
+ 12K	.
+Overall disk used/avail:
+Filesystem     Size   Used  Avail Capacity iused               ifree %iused  Mounted on
+/dev/disk1s1  465Gi  297Gi  166Gi    65% 3457496 9223372036851318311    0%   /
+Grabbing NIGHTSCOUT treatments.json and entries/sgv.json for date range...
+Query: https://william-cgm.herokuapp.com find%5Bdate%5D%5B%24gte%5D=1546228800000&find%5Bdate%5D%5B%24lte%5D=1546315200000&count=1000
+-rw-r--r--  1 willwhitmey  staff  105270 19 Jan 22:34 ns-entries.2018-12-31.json
+Query: https://william-cgm.herokuapp.com/find%5Bcreated_at%5D%5B%24gte%5D=2018-12-30T06:00+00:00&find%5Bcreated_at%5D%5B%24lte%5D=2019-01-01T18:00+00:00
+-rw-r--r--  1 willwhitmey  staff  90959 19 Jan 22:34 ns-treatments.2018-12-31.json
+oref0-autotune-prep ns-treatments.2018-12-31.json profile.json ns-entries.2018-12-31.json profile.pump.json  > autotune.2018-12-31.json
+start uannnounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.1 IOB: 1.2 at 04:23:01 dev: 1.08 avgDelta: -2.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.1 IOB: 1.2 at 04:28:01 dev: 1.12 avgDelta: -2.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.2 IOB: 1.2 at 04:33:01 dev: 1.16 avgDelta: -2.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.2 IOB: 1.1 at 04:38:01 dev: 1.45 avgDelta: -1.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.3 IOB: 1.1 at 04:43:00 dev: 0.82 avgDelta: -2.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.4 IOB: 1.0 at 04:48:00 dev: 0.19 avgDelta: -3.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.6 IOB: 1.0 at 04:53:00 dev: -1.65 avgDelta: -5.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.7 IOB: 0.9 at 04:58:00 dev: -3.77 avgDelta: -7.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.9 IOB: 0.9 at 05:03:01 dev: -1.65 avgDelta: -5.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -4.0 IOB: 0.8 at 05:08:01 dev: -2.74 avgDelta: -6.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -4.0 IOB: 0.8 at 05:13:01 dev: -3.53 avgDelta: -7.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.9 IOB: 0.7 at 05:18:00 dev: -2.15 avgDelta: -6.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.7 IOB: 0.7 at 05:23:00 dev: -0.02 avgDelta: -3.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.6 IOB: 0.7 at 05:28:00 dev: 3.85 avgDelta: 0.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.5 IOB: 0.6 at 05:33:01 dev: 9.48 avgDelta: 6.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.4 IOB: 0.6 at 05:38:00 dev: 12.86 avgDelta: 9.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.3 IOB: 0.5 at 05:43:00 dev: 9.28 avgDelta: 6.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.2 IOB: 0.5 at 05:48:00 dev: 7.66 avgDelta: 4.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.0 IOB: 0.5 at 05:53:00 dev: 5.29 avgDelta: 2.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.9 IOB: 0.4 at 05:58:00 dev: 3.67 avgDelta: 0.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.8 IOB: 0.4 at 06:03:00 dev: 3.79 avgDelta: 1.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.7 IOB: 0.4 at 06:08:01 dev: 3.17 avgDelta: 0.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.5 IOB: 0.3 at 06:13:01 dev: 2.80 avgDelta: 0.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.5 IOB: 0.3 at 06:18:00 dev: 1.97 avgDelta: -0.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.4 IOB: 0.3 at 06:23:00 dev: 0.60 avgDelta: -1.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.2 IOB: 0.2 at 06:28:00 dev: -0.02 avgDelta: -2.25 uam
+end unannounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.1 IOB: 0.2 at 06:33:00 dev: -0.14 avgDelta: -2.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.0 IOB: 0.2 at 06:38:00 dev: -0.52 avgDelta: -2.50 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.9 IOB: 0.2 at 06:43:00 dev: 0.86 avgDelta: -1.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.7 IOB: 0.1 at 06:48:00 dev: 0.99 avgDelta: -0.75 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.7 IOB: 0.1 at 06:53:00 dev: 0.66 avgDelta: -1.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.5 IOB: 0.1 at 06:58:00 dev: 0.04 avgDelta: -1.50 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.4 IOB: 0.1 at 07:03:00 dev: -1.08 avgDelta: -2.50 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.3 IOB: 0.1 at 07:08:00 dev: 0.05 avgDelta: -1.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.2 IOB: 0.1 at 07:13:00 dev: 0.17 avgDelta: -1.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.1 IOB: 0.1 at 07:18:00 dev: 1.05 avgDelta: 0.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.9 IOB: 0.0 at 07:23:00 dev: 1.18 avgDelta: 0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.8 IOB: 0.0 at 07:28:00 dev: -0.65 avgDelta: -1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.7 IOB: 0.0 at 07:33:00 dev: -2.02 avgDelta: -2.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.6 IOB: 0.0 at 07:38:00 dev: -2.39 avgDelta: -3.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.5 IOB: 0.0 at 07:43:00 dev: -2.26 avgDelta: -2.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.4 IOB: 0.0 at 07:48:00 dev: -2.14 avgDelta: -2.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.2 IOB: 0.0 at 07:53:00 dev: -1.26 avgDelta: -1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.1 IOB: 0.0 at 07:58:00 dev: -0.88 avgDelta: -1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: -0.0 IOB: 0.0 at 08:03:00 dev: -0.71 avgDelta: -0.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:08:00 dev: 1.00 avgDelta: 1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:13:00 dev: 1.75 avgDelta: 1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:18:00 dev: 2.00 avgDelta: 2.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:23:00 dev: 1.50 avgDelta: 1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:28:00 dev: 0.50 avgDelta: 0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:33:00 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:38:00 dev: -0.50 avgDelta: -0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:43:00 dev: 0.25 avgDelta: 0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:48:00 dev: 1.50 avgDelta: 1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:53:00 dev: 1.75 avgDelta: 1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: 0.0 IOB: 0.0 at 08:58:02 dev: 1.75 avgDelta: 1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:03:00 dev: 0.75 avgDelta: 0.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:08:00 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:13:00 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:18:00 dev: -0.25 avgDelta: -0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:23:00 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:28:00 dev: -0.50 avgDelta: -0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:33:00 dev: -1.00 avgDelta: -1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:38:00 dev: -1.25 avgDelta: -1.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:43:00 dev: -1.75 avgDelta: -1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:48:00 dev: -1.50 avgDelta: -1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:53:00 dev: -1.50 avgDelta: -1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 09:58:00 dev: -1.00 avgDelta: -1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:03:00 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:08:00 dev: -1.00 avgDelta: -1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:13:00 dev: -1.25 avgDelta: -1.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:18:00 dev: -2.75 avgDelta: -2.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:23:00 dev: -3.50 avgDelta: -3.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:28:00 dev: -3.75 avgDelta: -3.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:33:00 dev: -4.00 avgDelta: -4.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:38:00 dev: -0.75 avgDelta: -0.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:43:00 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:48:00 dev: 1.00 avgDelta: 1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:53:00 dev: 1.00 avgDelta: 1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 10:58:00 dev: -0.50 avgDelta: -0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:03:00 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:08:00 dev: 2.75 avgDelta: 2.75 basal
+start uannnounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:13:00 dev: 7.75 avgDelta: 7.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:18:00 dev: 7.75 avgDelta: 7.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:23:00 dev: 6.25 avgDelta: 6.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:28:00 dev: 4.00 avgDelta: 4.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:33:00 dev: 0.00 avgDelta: 0.00 uam
+end unannounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:38:00 dev: -0.25 avgDelta: -0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:43:00 dev: 1.00 avgDelta: 1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:48:01 dev: 2.00 avgDelta: 2.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:53:00 dev: 3.75 avgDelta: 3.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 11:58:01 dev: 5.75 avgDelta: 5.75 basal
+start uannnounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:03:01 dev: 6.75 avgDelta: 6.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:08:01 dev: 6.00 avgDelta: 6.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:13:01 dev: 5.25 avgDelta: 5.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:18:01 dev: 5.25 avgDelta: 5.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:23:00 dev: 5.75 avgDelta: 5.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:28:00 dev: 6.00 avgDelta: 6.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:33:00 dev: 6.50 avgDelta: 6.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:38:00 dev: 4.50 avgDelta: 4.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:43:00 dev: 1.75 avgDelta: 1.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:48:00 dev: 0.50 avgDelta: 0.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:53:00 dev: -1.75 avgDelta: -1.75 uam
+end unannounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: 0.0 IOB: 0.0 at 12:58:00 dev: -1.75 avgDelta: -1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.0 IOB: 0.5 at 13:03:00 dev: -1.46 avgDelta: -1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.1 IOB: 0.5 at 13:08:00 dev: -1.67 avgDelta: -1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.1 IOB: 0.5 at 13:13:00 dev: -1.63 avgDelta: -1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.2 IOB: 0.5 at 13:18:00 dev: -2.05 avgDelta: -2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.2 IOB: 0.5 at 13:23:00 dev: -2.01 avgDelta: -2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.3 IOB: 0.5 at 13:28:00 dev: -1.97 avgDelta: -2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.4 IOB: 0.5 at 13:33:00 dev: -2.89 avgDelta: -3.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.4 IOB: 0.5 at 13:38:00 dev: -3.35 avgDelta: -3.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.5 IOB: 0.5 at 13:43:00 dev: -3.55 avgDelta: -4.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.5 IOB: 0.5 at 13:48:00 dev: -3.22 avgDelta: -3.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.6 IOB: 0.5 at 13:53:00 dev: -3.43 avgDelta: -4.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.6 IOB: 0.5 at 13:58:00 dev: -3.64 avgDelta: -4.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.7 IOB: 0.4 at 14:03:00 dev: -3.31 avgDelta: -4.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.7 IOB: 0.4 at 14:08:00 dev: -3.27 avgDelta: -4.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.8 IOB: 0.4 at 14:13:00 dev: -1.98 avgDelta: -2.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.8 IOB: 0.4 at 14:18:01 dev: -1.15 avgDelta: -2.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.9 IOB: 0.4 at 14:23:00 dev: -1.36 avgDelta: -2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -0.9 IOB: 0.4 at 14:28:00 dev: -1.32 avgDelta: -2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.0 IOB: 0.4 at 14:33:00 dev: -0.99 avgDelta: -2.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.1 IOB: 0.4 at 14:38:00 dev: -1.20 avgDelta: -2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.1 IOB: 0.3 at 14:43:00 dev: -1.16 avgDelta: -2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.2 IOB: 0.3 at 14:48:00 dev: -0.83 avgDelta: -2.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.2 IOB: 0.3 at 14:53:00 dev: -0.54 avgDelta: -1.75 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.3 IOB: 0.3 at 14:58:00 dev: 0.01 avgDelta: -1.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.3 IOB: 0.3 at 15:03:00 dev: -0.66 avgDelta: -2.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.3 IOB: 0.3 at 15:08:00 dev: -1.66 avgDelta: -3.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.3 IOB: 0.3 at 15:13:00 dev: -1.95 avgDelta: -3.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.3 IOB: 0.2 at 15:18:00 dev: -1.99 avgDelta: -3.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.2 IOB: 0.2 at 15:23:00 dev: -1.04 avgDelta: -2.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.2 IOB: 0.2 at 15:28:00 dev: -0.33 avgDelta: -1.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.1 IOB: 0.2 at 15:33:00 dev: 0.13 avgDelta: -1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.1 IOB: 0.2 at 15:38:00 dev: 0.59 avgDelta: -0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.1 IOB: 0.2 at 15:43:00 dev: 0.80 avgDelta: -0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.0 IOB: 0.2 at 15:47:59 dev: 0.76 avgDelta: -0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.7 BGI: -1.0 IOB: 0.1 at 15:53:00 dev: 0.72 avgDelta: -0.25 basal
+CRInitialIOB: 6.027 CRInitialBG: 125 CRInitialCarbTime: 2018-12-31T15:57:59.967Z
+start carb absorption
+1 mealCOB: 39.7 mealCarbs: 40 basalBGI: 4.7 BGI: -1.5 IOB: 6.0 at 15:57:59 dev: 1.21 avgDelta: -0.25 csf
+1 mealCOB: 39.5 mealCarbs: 40 basalBGI: 4.7 BGI: -2.1 IOB: 6.0 at 16:02:59 dev: 2.82 avgDelta: 0.75 csf
+1 mealCOB: 39.2 mealCarbs: 40 basalBGI: 4.7 BGI: -2.7 IOB: 6.0 at 16:07:59 dev: 3.67 avgDelta: 1.00 csf
+1 mealCOB: 38.9 mealCarbs: 40 basalBGI: 4.7 BGI: -3.2 IOB: 5.9 at 16:12:59 dev: 3.24 avgDelta: 0.00 csf
+1 mealCOB: 38.6 mealCarbs: 40 basalBGI: 4.7 BGI: -3.9 IOB: 5.9 at 16:17:59 dev: 2.35 avgDelta: -1.50 csf
+1 mealCOB: 38.4 mealCarbs: 40 basalBGI: 4.7 BGI: -4.5 IOB: 5.8 at 16:22:59 dev: 0.95 avgDelta: -3.50 csf
+1 mealCOB: 38.1 mealCarbs: 40 basalBGI: 4.7 BGI: -5.1 IOB: 5.7 at 16:27:59 dev: 1.06 avgDelta: -4.00 csf
+1 mealCOB: 37.8 mealCarbs: 40 basalBGI: 4.7 BGI: -5.6 IOB: 5.7 at 16:32:59 dev: 2.88 avgDelta: -2.75 csf
+1 mealCOB: 37.3 mealCarbs: 40 basalBGI: 4.7 BGI: -6.2 IOB: 5.6 at 16:37:59 dev: 6.24 avgDelta: 0.00 csf
+1 mealCOB: 36.5 mealCarbs: 40 basalBGI: 4.7 BGI: -6.8 IOB: 5.5 at 16:42:59 dev: 9.84 avgDelta: 3.00 csf
+1 mealCOB: 35.3 mealCarbs: 40 basalBGI: 4.7 BGI: -7.5 IOB: 5.4 at 16:47:59 dev: 12.95 avgDelta: 5.50 csf
+1 mealCOB: 34.1 mealCarbs: 40 basalBGI: 4.7 BGI: -8.1 IOB: 5.3 at 16:52:59 dev: 14.31 avgDelta: 6.25 csf
+1 mealCOB: 32.8 mealCarbs: 40 basalBGI: 4.7 BGI: -8.6 IOB: 5.2 at 16:57:59 dev: 14.88 avgDelta: 6.25 csf
+1 mealCOB: 31.5 mealCarbs: 40 basalBGI: 4.7 BGI: -9.2 IOB: 5.1 at 17:02:59 dev: 15.48 avgDelta: 6.25 csf
+1 mealCOB: 30.0 mealCarbs: 40 basalBGI: 4.7 BGI: -9.8 IOB: 5.0 at 17:08:00 dev: 16.59 avgDelta: 6.75 csf
+1 mealCOB: 28.7 mealCarbs: 40 basalBGI: 4.7 BGI: -10.4 IOB: 4.8 at 17:13:00 dev: 15.95 avgDelta: 5.50 csf
+1 mealCOB: 27.5 mealCarbs: 40 basalBGI: 4.7 BGI: -11.1 IOB: 4.7 at 17:18:00 dev: 13.56 avgDelta: 2.50 csf
+1 mealCOB: 26.6 mealCarbs: 40 basalBGI: 4.7 BGI: -11.6 IOB: 4.5 at 17:23:00 dev: 10.87 avgDelta: -0.75 csf
+1 mealCOB: 25.8 mealCarbs: 40 basalBGI: 4.7 BGI: -12.2 IOB: 4.4 at 17:28:00 dev: 8.98 avgDelta: -3.25 csf
+1 mealCOB: 25.0 mealCarbs: 40 basalBGI: 4.7 BGI: -12.8 IOB: 4.2 at 17:33:00 dev: 9.34 avgDelta: -3.50 csf
+1 mealCOB: 24.0 mealCarbs: 40 basalBGI: 4.7 BGI: -13.4 IOB: 4.1 at 17:38:00 dev: 10.70 avgDelta: -2.75 csf
+1 mealCOB: 23.0 mealCarbs: 40 basalBGI: 4.7 BGI: -14.0 IOB: 3.9 at 17:43:00 dev: 12.26 avgDelta: -1.75 csf
+1 mealCOB: 22.0 mealCarbs: 40 basalBGI: 4.7 BGI: -14.6 IOB: 3.7 at 17:48:00 dev: 10.87 avgDelta: -3.75 csf
+1 mealCOB: 21.1 mealCarbs: 40 basalBGI: 4.7 BGI: -15.2 IOB: 3.5 at 17:53:00 dev: 10.48 avgDelta: -4.75 csf
+1 mealCOB: 20.2 mealCarbs: 40 basalBGI: 4.7 BGI: -15.8 IOB: 3.3 at 17:58:00 dev: 11.34 avgDelta: -4.50 csf
+1 mealCOB: 19.2 mealCarbs: 40 basalBGI: 4.7 BGI: -15.6 IOB: 3.1 at 18:03:00 dev: 11.30 avgDelta: -4.25 csf
+1 mealCOB: 18.1 mealCarbs: 40 basalBGI: 4.7 BGI: -15.1 IOB: 2.9 at 18:08:00 dev: 12.61 avgDelta: -2.50 csf
+1 mealCOB: 17.0 mealCarbs: 40 basalBGI: 4.7 BGI: -14.7 IOB: 2.8 at 18:13:00 dev: 12.91 avgDelta: -1.75 csf
+1 mealCOB: 15.9 mealCarbs: 40 basalBGI: 4.7 BGI: -14.2 IOB: 2.6 at 18:18:00 dev: 12.72 avgDelta: -1.50 csf
+1 mealCOB: 14.9 mealCarbs: 40 basalBGI: 4.7 BGI: -13.7 IOB: 2.4 at 18:23:00 dev: 11.48 avgDelta: -2.25 csf
+1 mealCOB: 13.9 mealCarbs: 40 basalBGI: 4.7 BGI: -13.3 IOB: 2.3 at 18:28:00 dev: 11.28 avgDelta: -2.00 csf
+1 mealCOB: 12.9 mealCarbs: 40 basalBGI: 4.7 BGI: -12.8 IOB: 2.1 at 18:33:00 dev: 11.34 avgDelta: -1.50 csf
+1 mealCOB: 12.1 mealCarbs: 40 basalBGI: 4.7 BGI: -12.4 IOB: 2.0 at 18:38:00 dev: 10.14 avgDelta: -2.25 csf
+1 mealCOB: 11.2 mealCarbs: 40 basalBGI: 4.7 BGI: -11.9 IOB: 1.8 at 18:43:00 dev: 9.91 avgDelta: -2.00 csf
+1 mealCOB: 10.4 mealCarbs: 40 basalBGI: 4.7 BGI: -11.5 IOB: 1.7 at 18:48:00 dev: 9.46 avgDelta: -2.00 csf
+1 mealCOB: 9.7 mealCarbs: 40 basalBGI: 4.7 BGI: -11.0 IOB: 1.5 at 18:53:00 dev: 8.27 avgDelta: -2.75 csf
+1 mealCOB: 9.0 mealCarbs: 40 basalBGI: 4.7 BGI: -10.6 IOB: 1.4 at 18:58:00 dev: 7.57 avgDelta: -3.00 csf
+1 mealCOB: 8.3 mealCarbs: 40 basalBGI: 4.7 BGI: -10.1 IOB: 1.3 at 19:02:59 dev: 7.83 avgDelta: -2.25 csf
+1 mealCOB: 7.8 mealCarbs: 40 basalBGI: 4.7 BGI: -9.6 IOB: 1.2 at 19:07:59 dev: 6.39 avgDelta: -3.25 csf
+1 mealCOB: 7.3 mealCarbs: 40 basalBGI: 4.7 BGI: -9.2 IOB: 1.1 at 19:12:59 dev: 6.19 avgDelta: -3.00 csf
+1 mealCOB: 6.7 mealCarbs: 40 basalBGI: 4.7 BGI: -8.8 IOB: 0.9 at 19:17:59 dev: 6.75 avgDelta: -2.00 csf
+1 mealCOB: 6.1 mealCarbs: 40 basalBGI: 4.7 BGI: -8.3 IOB: 0.8 at 19:23:00 dev: 6.05 avgDelta: -2.25 csf
+1 mealCOB: 5.6 mealCarbs: 40 basalBGI: 4.7 BGI: -7.8 IOB: 0.8 at 19:28:00 dev: 6.82 avgDelta: -1.00 csf
+1 mealCOB: 5.0 mealCarbs: 40 basalBGI: 4.7 BGI: -7.4 IOB: 0.7 at 19:32:59 dev: 6.87 avgDelta: -0.50 csf
+1 mealCOB: 4.3 mealCarbs: 40 basalBGI: 4.7 BGI: -6.9 IOB: 0.6 at 19:37:59 dev: 7.68 avgDelta: 0.75 csf
+1 mealCOB: 3.4 mealCarbs: 40 basalBGI: 4.7 BGI: -6.5 IOB: 0.5 at 19:42:59 dev: 10.73 avgDelta: 4.25 csf
+1 mealCOB: 26.9 mealCarbs: 65 basalBGI: 4.7 BGI: -6.1 IOB: 4.2 at 19:47:59 dev: 17.32 avgDelta: 11.25 csf
+1 mealCOB: 24.9 mealCarbs: 65 basalBGI: 4.7 BGI: -6.0 IOB: 4.2 at 19:52:59 dev: 23.03 avgDelta: 17.00 csf
+1 mealCOB: 22.5 mealCarbs: 65 basalBGI: 4.7 BGI: -6.0 IOB: 4.1 at 19:57:59 dev: 27.74 avgDelta: 21.75 csf
+1 mealCOB: 20.0 mealCarbs: 65 basalBGI: 4.7 BGI: -6.0 IOB: 4.0 at 20:03:00 dev: 28.45 avgDelta: 22.50 csf
+1 mealCOB: 18.0 mealCarbs: 65 basalBGI: 4.7 BGI: -5.9 IOB: 3.9 at 20:08:00 dev: 23.41 avgDelta: 17.50 csf
+1 mealCOB: 16.3 mealCarbs: 65 basalBGI: 4.7 BGI: -5.9 IOB: 5.4 at 20:13:00 dev: 20.16 avgDelta: 14.25 csf
+1 mealCOB: 14.9 mealCarbs: 65 basalBGI: 4.7 BGI: -6.0 IOB: 5.3 at 20:18:00 dev: 15.28 avgDelta: 9.25 csf
+1 mealCOB: 13.9 mealCarbs: 65 basalBGI: 4.7 BGI: -6.1 IOB: 5.2 at 20:22:59 dev: 12.62 avgDelta: 6.50 csf
+1 mealCOB: 12.9 mealCarbs: 65 basalBGI: 4.7 BGI: -6.2 IOB: 5.1 at 20:27:59 dev: 10.74 avgDelta: 4.50 csf
+1 mealCOB: 12.3 mealCarbs: 65 basalBGI: 4.7 BGI: -6.4 IOB: 5.1 at 20:32:59 dev: 7.36 avgDelta: 1.00 csf
+1 mealCOB: 11.8 mealCarbs: 65 basalBGI: 4.7 BGI: -6.5 IOB: 5.0 at 20:37:59 dev: 5.98 avgDelta: -0.50 csf
+1 mealCOB: 11.4 mealCarbs: 65 basalBGI: 4.7 BGI: -6.6 IOB: 4.9 at 20:42:59 dev: 3.85 avgDelta: -2.75 csf
+1 mealCOB: 11.1 mealCarbs: 65 basalBGI: 4.7 BGI: -6.7 IOB: 4.8 at 20:47:59 dev: 3.47 avgDelta: -3.25 csf
+1 mealCOB: 10.8 mealCarbs: 65 basalBGI: 4.7 BGI: -6.8 IOB: 4.7 at 20:52:59 dev: 3.84 avgDelta: -3.00 csf
+1 mealCOB: 10.5 mealCarbs: 65 basalBGI: 4.7 BGI: -7.3 IOB: 4.6 at 20:57:59 dev: 4.08 avgDelta: -3.25 csf
+1 mealCOB: 10.1 mealCarbs: 65 basalBGI: 4.7 BGI: -7.9 IOB: 4.5 at 21:02:59 dev: 4.40 avgDelta: -3.50 csf
+1 mealCOB: 9.7 mealCarbs: 65 basalBGI: 4.7 BGI: -8.5 IOB: 4.4 at 21:07:59 dev: 4.71 avgDelta: -3.75 csf
+1 mealCOB: 9.3 mealCarbs: 65 basalBGI: 4.7 BGI: -9.0 IOB: 4.3 at 21:12:59 dev: 3.78 avgDelta: -5.25 csf
+1 mealCOB: 9.0 mealCarbs: 65 basalBGI: 4.7 BGI: -9.6 IOB: 4.2 at 21:17:59 dev: 3.60 avgDelta: -6.00 csf
+1 mealCOB: 8.8 mealCarbs: 65 basalBGI: 4.7 BGI: -10.2 IOB: 4.1 at 21:22:59 dev: 3.17 avgDelta: -7.00 csf
+1 mealCOB: 8.5 mealCarbs: 65 basalBGI: 4.7 BGI: -10.7 IOB: 3.9 at 21:27:59 dev: 3.23 avgDelta: -7.50 csf
+1 mealCOB: 8.1 mealCarbs: 65 basalBGI: 4.7 BGI: -11.3 IOB: 3.8 at 21:32:59 dev: 4.84 avgDelta: -6.50 csf
+1 mealCOB: 7.5 mealCarbs: 65 basalBGI: 4.7 BGI: -11.9 IOB: 3.6 at 21:37:59 dev: 6.41 avgDelta: -5.50 csf
+1 mealCOB: 6.8 mealCarbs: 65 basalBGI: 4.7 BGI: -12.5 IOB: 3.5 at 21:43:00 dev: 8.47 avgDelta: -4.00 csf
+1 mealCOB: 6.0 mealCarbs: 65 basalBGI: 4.7 BGI: -13.0 IOB: 3.3 at 21:47:59 dev: 9.29 avgDelta: -3.75 csf
+1 mealCOB: 5.2 mealCarbs: 65 basalBGI: 4.7 BGI: -13.5 IOB: 3.1 at 21:52:59 dev: 9.24 avgDelta: -4.25 csf
+1 mealCOB: 4.5 mealCarbs: 65 basalBGI: 4.7 BGI: -13.3 IOB: 3.0 at 21:57:59 dev: 8.32 avgDelta: -5.00 csf
+1 mealCOB: 3.8 mealCarbs: 65 basalBGI: 4.7 BGI: -13.2 IOB: 2.8 at 22:02:59 dev: 7.70 avgDelta: -5.50 csf
+1 mealCOB: 3.1 mealCarbs: 65 basalBGI: 4.7 BGI: -13.1 IOB: 2.7 at 22:07:59 dev: 8.33 avgDelta: -4.75 csf
+1 mealCOB: 2.2 mealCarbs: 65 basalBGI: 4.7 BGI: -13.0 IOB: 2.5 at 22:12:59 dev: 10.21 avgDelta: -2.75 csf
+1 mealCOB: 1.2 mealCarbs: 65 basalBGI: 4.7 BGI: -12.8 IOB: 2.3 at 22:17:59 dev: 11.51 avgDelta: -1.25 csf
+1 mealCOB: 0.1 mealCarbs: 65 basalBGI: 4.7 BGI: -12.3 IOB: 2.2 at 22:22:59 dev: 12.35 avgDelta: 0.00 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 4.7 BGI: -11.9 IOB: 2.0 at 22:27:59 dev: 12.20 avgDelta: 0.25 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 4.7 BGI: -11.5 IOB: 1.9 at 22:32:59 dev: 11.04 avgDelta: -0.50 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 4.7 BGI: -11.1 IOB: 1.8 at 22:37:59 dev: 10.64 avgDelta: -0.50 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 4.7 BGI: -10.7 IOB: 1.6 at 22:42:59 dev: 10.48 avgDelta: -0.25 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 4.7 BGI: -10.3 IOB: 1.5 at 22:47:59 dev: 8.83 avgDelta: -1.50 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 4.7 BGI: -9.9 IOB: 1.4 at 22:52:59 dev: 7.88 avgDelta: -2.00 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 4.7 BGI: -9.5 IOB: 1.3 at 22:57:59 dev: 6.73 avgDelta: -2.75 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -9.1 IOB: 1.2 at 23:02:59 dev: 5.57 avgDelta: -3.50 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -8.7 IOB: 1.1 at 23:07:59 dev: 4.92 avgDelta: -3.75 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -8.3 IOB: 1.0 at 23:12:59 dev: 4.26 avgDelta: -4.00 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -7.9 IOB: 0.9 at 23:17:59 dev: 4.11 avgDelta: -3.75 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -7.5 IOB: 0.8 at 23:22:59 dev: 3.95 avgDelta: -3.50 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -7.0 IOB: 0.7 at 23:27:59 dev: 4.80 avgDelta: -2.25 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -6.6 IOB: 0.6 at 23:32:59 dev: 5.89 avgDelta: -0.75 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -6.2 IOB: 0.5 at 23:37:59 dev: 5.24 avgDelta: -1.00 csf
+1 mealCOB: 0.0 mealCarbs: 65 basalBGI: 5.7 BGI: -5.8 IOB: 0.5 at 23:42:59 dev: 5.58 avgDelta: -0.25 csf
+CREndIOB: 0.398 CREndBG: 102 CREndTime: 2018-12-31T23:47:59.390Z
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: -5.4 IOB: 0.4 at 23:47:59 dev: 5.64 avgDelta: 0.25 csf
+end carb absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: -5.0 IOB: 0.3 at 23:52:59 dev: 5.23 avgDelta: 0.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 5.7 BGI: -4.6 IOB: 0.3 at 23:58:00 dev: 5.83 avgDelta: 1.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -4.2 IOB: 0.2 at 00:02:59 dev: 4.42 avgDelta: 0.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.8 IOB: 0.2 at 00:07:59 dev: 2.77 avgDelta: -1.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.4 IOB: 0.1 at 00:12:59 dev: 1.61 avgDelta: -1.75 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -3.0 IOB: 0.1 at 00:17:59 dev: 0.96 avgDelta: -2.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.5 IOB: 0.1 at 00:22:59 dev: 1.30 avgDelta: -1.25 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -2.1 IOB: 0.1 at 00:27:59 dev: 1.65 avgDelta: -0.50 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.7 IOB: 0.0 at 00:32:59 dev: 1.74 avgDelta: 0.00 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -1.3 IOB: 0.0 at 00:37:59 dev: 0.80 avgDelta: -0.50 ISF
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.9 IOB: 0.0 at 00:42:59 dev: -0.36 avgDelta: -1.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.6 IOB: 0.0 at 00:47:59 dev: -2.68 avgDelta: -3.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.5 IOB: 0.0 at 00:52:59 dev: -3.05 avgDelta: -3.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.3 IOB: 0.0 at 00:57:59 dev: -1.43 avgDelta: -1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.2 IOB: 0.0 at 01:02:59 dev: -0.30 avgDelta: -0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: -0.1 IOB: 0.0 at 01:07:59 dev: 2.33 avgDelta: 2.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:12:59 dev: 1.75 avgDelta: 1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:17:59 dev: 0.25 avgDelta: 0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:22:59 dev: 0.75 avgDelta: 0.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:28:00 dev: 1.75 avgDelta: 1.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:33:07 dev: 4.25 avgDelta: 4.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:37:59 dev: 4.25 avgDelta: 4.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:42:59 dev: 2.50 avgDelta: 2.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:47:59 dev: 0.50 avgDelta: 0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:52:59 dev: -1.25 avgDelta: -1.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 01:57:59 dev: 0.75 avgDelta: 0.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:02:59 dev: 6.00 avgDelta: 6.00 basal
+start uannnounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:07:59 dev: 7.50 avgDelta: 7.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:12:59 dev: 8.00 avgDelta: 8.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:17:59 dev: 5.50 avgDelta: 5.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:22:59 dev: 1.50 avgDelta: 1.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:27:59 dev: 1.25 avgDelta: 1.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:32:59 dev: 1.25 avgDelta: 1.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:37:59 dev: 1.75 avgDelta: 1.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:42:59 dev: 1.50 avgDelta: 1.50 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:47:59 dev: 1.00 avgDelta: 1.00 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:52:59 dev: 0.75 avgDelta: 0.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 02:57:59 dev: 0.75 avgDelta: 0.75 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:02:59 dev: 0.25 avgDelta: 0.25 uam
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:07:59 dev: -0.25 avgDelta: -0.25 uam
+end unannounced meal absorption
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:12:59 dev: -0.75 avgDelta: -0.75 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:17:59 dev: -0.25 avgDelta: -0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:22:59 dev: -0.50 avgDelta: -0.50 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:27:58 dev: -0.25 avgDelta: -0.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:32:58 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:37:58 dev: 0.00 avgDelta: 0.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:42:58 dev: 1.00 avgDelta: 1.00 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:47:58 dev: 1.25 avgDelta: 1.25 basal
+0 mealCOB: 0.0 mealCarbs: 0 basalBGI: 4.0 BGI: 0.0 IOB: 0.0 at 03:52:58 dev: 1.50 avgDelta: 1.50 basal
+oref0-autotune-core autotune.2018-12-31.json profile.json profile.pump.json > newprofile.2018-12-31.json
+CRTotalCarbs: 65 CRTotalInsulin: 11.043 totalCR: 5.886
+Hour 0 total deviations: -7.52 mg/dL
+Hour 0 basal adjustment needed: -0.02 U/hr
+Hour 1 total deviations: 17.53 mg/dL
+Hour 1 basal adjustment needed: 0.04 U/hr
+Hour 2 total deviations: 6 mg/dL
+Hour 2 basal adjustment needed: 0.01 U/hr
+Hour 3 total deviations: 2 mg/dL
+Hour 3 basal adjustment needed: 0 U/hr
+Hour 4 total deviations: 0 mg/dL
+Hour 4 basal adjustment needed: 0 U/hr
+Hour 5 total deviations: 0 mg/dL
+Hour 5 basal adjustment needed: 0 U/hr
+Hour 6 total deviations: 0 mg/dL
+Hour 6 basal adjustment needed: 0 U/hr
+Hour 7 total deviations: -10.42 mg/dL
+Hour 7 basal adjustment needed: -0.03 U/hr
+Hour 8 total deviations: 10.79 mg/dL
+Hour 8 basal adjustment needed: 0.03 U/hr
+Hour 9 total deviations: -8 mg/dL
+Hour 9 basal adjustment needed: -0.02 U/hr
+Hour 10 total deviations: -15.5 mg/dL
+Hour 10 basal adjustment needed: -0.04 U/hr
+Hour 11 total deviations: 15 mg/dL
+Hour 11 basal adjustment needed: 0.04 U/hr
+Hour 12 total deviations: -1.75 mg/dL
+Hour 12 basal adjustment needed: 0 U/hr
+Hour 13 total deviations: -30.87 mg/dL
+Hour 13 basal adjustment needed: -0.08 U/hr
+Hour 14 total deviations: -16.57 mg/dL
+Hour 14 basal adjustment needed: -0.04 U/hr
+Hour 15 total deviations: 2.67 mg/dL
+Hour 15 basal adjustment needed: 0.01 U/hr
+Hour 16 total deviations: 0 mg/dL
+Hour 16 basal adjustment needed: 0 U/hr
+Hour 17 total deviations: 0 mg/dL
+Hour 17 basal adjustment needed: 0 U/hr
+Hour 18 total deviations: 0 mg/dL
+Hour 18 basal adjustment needed: 0 U/hr
+Hour 19 total deviations: 0 mg/dL
+Hour 19 basal adjustment needed: 0 U/hr
+Hour 20 total deviations: 0 mg/dL
+Hour 20 basal adjustment needed: 0 U/hr
+Hour 21 total deviations: 0 mg/dL
+Hour 21 basal adjustment needed: 0 U/hr
+Hour 22 total deviations: 0 mg/dL
+Hour 22 basal adjustment needed: 0 U/hr
+Hour 23 total deviations: 0 mg/dL
+Hour 23 basal adjustment needed: 0 U/hr
+Adjusting hour 2 basal from 0.6 to 0.599 based on hour 1 = 0.603 and hour 4 = 0.59
+Adjusting hour 3 basal from 0.6 to 0.599 based on hour 1 = 0.603 and hour 4 = 0.59
+Adjusting hour 5 basal from 0.6 to 0.598 based on hour 4 = 0.59 and hour 6 = 0.594
+Adjusting hour 9 basal from 0.7 to 0.712 based on hour 8 = 0.839 and hour 10 = 0.686
+Adjusting hour 15 basal from 0.7 to 0.7 based on hour 14 = 0.703 and hour 21 = 0.694
+Adjusting hour 16 basal from 0.7 to 0.7 based on hour 14 = 0.703 and hour 21 = 0.694
+Adjusting hour 17 basal from 0.7 to 0.7 based on hour 14 = 0.703 and hour 21 = 0.694
+Adjusting hour 18 basal from 0.7 to 0.7 based on hour 14 = 0.703 and hour 21 = 0.694
+Adjusting hour 19 basal from 0.7 to 0.7 based on hour 14 = 0.703 and hour 21 = 0.694
+Adjusting hour 20 basal from 0.7 to 0.7 based on hour 14 = 0.703 and hour 21 = 0.694
+[ { start: '00:00:00', minutes: 0, rate: 0.616, i: 0 },
+  { start: '01:00:00', minutes: 60, rate: 0.603, i: 1 },
+  { start: '02:00:00', minutes: 120, rate: 0.599, i: 2 },
+  { start: '03:00:00', minutes: 180, rate: 0.599, i: 3 },
+  { start: '04:00:00', minutes: 240, rate: 0.59, i: 4 },
+  { start: '05:00:00', minutes: 300, rate: 0.598, i: 5 },
+  { start: '06:00:00', minutes: 360, rate: 0.594, i: 6 },
+  { start: '07:00:00', minutes: 420, rate: 0.593, i: 7 },
+  { start: '08:00:00', minutes: 480, rate: 0.839, i: 8 },
+  { start: '09:00:00', minutes: 540, rate: 0.712, i: 9 },
+  { start: '10:00:00', minutes: 600, rate: 0.686, i: 10 },
+  { start: '11:00:00', minutes: 660, rate: 0.66, i: 11 },
+  { start: '12:00:00', minutes: 720, rate: 0.663, i: 12 },
+  { start: '13:00:00', minutes: 780, rate: 0.689, i: 13 },
+  { start: '14:00:00', minutes: 840, rate: 0.703, i: 14 },
+  { start: '15:00:00', minutes: 900, rate: 0.7, i: 15 },
+  { start: '16:00:00', minutes: 960, rate: 0.7, i: 16 },
+  { start: '17:00:00', minutes: 1020, rate: 0.7, i: 17 },
+  { start: '18:00:00', minutes: 1080, rate: 0.7, i: 18 },
+  { start: '19:00:00', minutes: 1140, rate: 0.7, i: 19 },
+  { start: '20:00:00', minutes: 1200, rate: 0.7, i: 20 },
+  { start: '21:00:00', minutes: 1260, rate: 0.694, i: 21 },
+  { start: '22:00:00', minutes: 1320, rate: 0.707, i: 22 },
+  { start: '23:00:00', minutes: 1380, rate: 0.858, i: 23 } ]
+totalMealCarbs: 65 totalDeviations: 860.56 oldCSF 11.571 fullNewCSF: 13.24 newCSF: 11.905
+oldCR: 7 fullNewCR: 5.886 newCR: 6.777
+Limiting adjusted ISF of 61.97 to 67.50 (which is pump ISF of 81 / 1.2 )
+p50deviation: 0.73 p50BGI -1.6 p50ratios: 0.765 Old ISF: 81 fullNewISF: 61.965 adjustedISF: 67.5 newISF: 78.3
+
+Autotune pump profile recommendations:
+---------------------------------------------------------
+Recommendations Log File: /Users/willwhitmey/autotune-backend/myopenaps/autotune/autotune_recommendations.log
+
+Parameter      | Pump     | Autotune 
+-------------------------------------
+ISF [mg/dL/U]  | 81.000   | 78.300   
+Carb Ratio[g/U]| 7.000    | 6.777    
+Basals [U/hr]  | -        |
+  00:00        | 0.600    | 0.616    
+  01:00        |          | 0.603    
+  02:00        |          | 0.599    
+  03:00        |          | 0.599    
+  04:00        |          | 0.590    
+  05:00        |          | 0.598    
+  06:00        |          | 0.594    
+  07:00        |          | 0.593    
+  08:00        | 0.850    | 0.839    
+  09:00        | 0.700    | 0.712    
+  10:00        |          | 0.686    
+  11:00        |          | 0.660    
+  12:00        |          | 0.663    
+  13:00        |          | 0.689    
+  14:00        |          | 0.703    
+  15:00        |          | 0.700    
+  16:00        |          | 0.700    
+  17:00        |          | 0.700    
+  18:00        |          | 0.700    
+  19:00        |          | 0.700    
+  20:00        |          | 0.700    
+  21:00        |          | 0.694    
+  22:00        |          | 0.707    
+  23:00        | 0.850    | 0.858    
+Query: https://william-cgm.herokuapp.com find%5Bdate%5D%5B%24gte%5D=1546315200000&find%5Bdate%5D%5B%24lte%5D=1546401600000&count=1000
