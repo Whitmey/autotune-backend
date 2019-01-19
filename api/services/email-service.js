@@ -17,7 +17,6 @@ exports.sendAlgoMail = function(req, data){
     from: '"AutoTune App" <autotune@zoho.com>', // sender address
     to: 'w.whitmey@outlook.com', // list of receivers
     subject: 'AutoTune Algo Run', // Subject line
-    text: '', // plain text body
     html: data // html body
   };
 
@@ -38,8 +37,7 @@ exports.sendFeedbackMail = function(req){
     from: '"AutoTune App" <autotune@zoho.com>', // sender address
     to: 'w.whitmey@outlook.com', // list of receivers
     subject: 'AutoTune Feedback', // Subject line
-    text: req.body.content, // plain text body
-    html: '<b>Hello world?</b>' // html body
+    html: req.body.content // html body
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
