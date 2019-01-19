@@ -16,7 +16,10 @@ exports.run_algorithm = function(req, res) {
 
   shell.exec(`oref0-autotune --dir=${__basedir}/myopenaps --ns-host=${shellArgs.url} --start-date=${shellArgs.startDate} --end-date=${shellArgs.endDate} `)
 
+  console.log('autotune script ran');
+
   fs.readFile(`${__basedir}/myopenaps/autotune/autotune_recommendations.log`, 'utf8', function(err, data) {
+    console.log(parser.parse(data));
     emailService.sendAlgoMail(req, data);
     res.send(parser.parse(data))
   });
