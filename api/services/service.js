@@ -4,15 +4,18 @@ const fs = require('fs');
 const parser = require('./parser-service');
 const fileWriter = require('./file-writer');
 const emailService = require('./email-service');
+const validationService = require('./validation-service');
 
 exports.run_algorithm = function(req, res) {
 
   fileWriter.generateCurrentSettingsFiles(req.body.currentSettings);
 
-  shell.exec(`oref0-autotune --dir=${__basedir}/myopenaps --ns-host=${req.body.url} --start-date=2018-12-31 --end-date=2019-01-01 `)
+  let shellArgs = validationService.validate(req);
+
+  shell.exec(`oref0-autotune --dir=${__basedir}/myopenaps --ns-host=${shellArgs.url} --start-date=${shellArgs.startDate} --end-date=${shellArgs.endDate} `)
 
   fs.readFile(`${__basedir}/myopenaps/autotune/autotune_recommendations.log`, 'utf8', function(err, data) {
-    emailService.sendMail(req, data);
+    emailService.sendAlgoMail(req, data);
     res.send(parser.parse(data))
   });
 
@@ -21,5 +24,6 @@ exports.run_algorithm = function(req, res) {
 }
 
 exports.submit_feedback = function(req, res) {
+  emailService.sendFeedbackMail(req)
   res.sendStatus(200);
 }
